@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
   final euroController = TextEditingController();
 
   void _realChanged(String text) {
-    if (text == '') {
+    if (text.isEmpty) {
       this._clearAllFields();
     } else {
       double real = double.parse(text);
@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
   }
 
   void _dolarChanged(String text) {
-    if (text == '') {
+    if (text.isEmpty) {
       this._clearAllFields();
     } else {
       double dolar = double.parse(dolarController.text);
@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
   }
 
   void _euroChanged(String text) {
-    if (text == '') {
+    if (text.isEmpty) {
       this._clearAllFields();
     } else {
       double euro = double.parse(euroController.text);
