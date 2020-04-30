@@ -128,7 +128,7 @@ Widget buildTextNumberField(
   return TextField(
     controller: textControler,
     onChanged: changeFunc,
-    keyboardType: TextInputType.number,
+    keyboardType: TextInputType.numberWithOptions(decimal: true),
     decoration: InputDecoration(
       labelText: label,
       labelStyle: TextStyle(color: Colors.amber),
